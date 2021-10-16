@@ -1,0 +1,25 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: cyan;
+    display: flex;
+    align-items: center;
+    height: 100vh;
+}
+
+.bola {
+    width: 200px;
+    height: 200px;
+    background-color: gold;
+    border-radius: 50%;
+    transition-duration: 1s;
+}
+
+.bola:hover {
+    transform: translateX(calc(100vw - 200px));
+    background-color: silver;
+}
