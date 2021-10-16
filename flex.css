@@ -1,0 +1,80 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: cyan;
+    display: flex;
+    justify-content: center;
+}
+
+.container {
+    background-color: silver;
+    width: 70vw;
+    height: 100vh;
+
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 1fr 1fr 1fr;
+
+    grid-template-areas: 
+    "foto exp"
+    "res exp"
+    "res exp"
+    
+    ;
+
+}
+
+.foto {
+    width: 100%;
+    height: 100%;
+    background-color: crimson;
+    grid-area: foto;
+}
+
+.resumo {
+    width: 100%;
+    height: 100%;
+    background-color: navy;
+    grid-area: res;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+
+
+}
+
+.experiencias {
+    width: 100%;
+    height: 100%;
+    background-color: gold;
+    grid-area: exp;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    
+}
+
+.imagem {
+    background-color: chocolate;
+    width: 100%;
+    height: 100%;
+    border-radius: 100%;
+}
+
+.resumo-texto {
+    background-color: ghostwhite;
+    width: 100%;
+    height: 50px;
+}
+
+.exp-texto {
+    background-color: purple;
+    width: 100%;
+    height: 50px;
+}

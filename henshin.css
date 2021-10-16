@@ -1,0 +1,43 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: crimson;
+    display: flex;
+    align-items: center;
+    height: 100vh;
+}
+
+.bola {
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+
+    animation-name: change;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in;
+}
+
+@keyframes change {
+
+    0% {
+        background-color: navy;
+    }
+
+    50% {
+        background-color: cyan;
+        transform: translateX(200px);
+    }
+
+    100% {
+        background-color: ghostwhite;
+        transform: translateX(calc(100vw - 200px));
+    }
+}
